@@ -1,0 +1,56 @@
+import LinkedIn from "../assets/icons/github-logo.svg";
+import GitHub from "../assets/icons/linked-in.png";
+import Email from "../assets/icons/email.jpg";
+import Phone from "../assets/icons/phone.png";
+import {useState} from 'react';
+
+export default function Contact() {
+
+    const [toastText, setToastText] = useState("Copied!")
+    const [visible, setVisible] = useState(false)
+
+    function handleCopy(text) {
+        navigator.clipboard.writeText(text);
+        setToastText("Copied!");
+        setVisible(true);
+
+        setTimeout(() => setVisible(false), 1000);
+    }
+    return (
+        <section id="contact-details">
+            {/* LinkedIn -->*/}
+            <a class="icon-linkedin"
+                href="https://www.linkedin.com/in/tanhongguan04/"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img class="icon" src={LinkedIn} alt="LinkedIn"/>
+            </a>
+
+            {/* GitHub */}
+            <a class="icon-github"
+                href="https://github.com/TanHongGuan"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <img class="icon" src={GitHub} alt="GitHub"/>
+            </a>
+            
+            <div class="contact">
+                <img class="icon" src={Phone} alt="phone"/>
+                <span
+                class="copy"
+                onClick={() => handleCopy("+60 17-341 1182")}> 
+                +60 17-341 1182 </span>        
+            </div>            
+
+            <div class="contact">
+                <img class="icon" src={Email} alt="email"/>
+                <span
+                class="copy" 
+                onClick={() => handleCopy("tanhongguan04@gmail.com")}> 
+                tanhongguan04@gmail.com </span>
+            </div>
+
+        </section>
+    );
+
+}
