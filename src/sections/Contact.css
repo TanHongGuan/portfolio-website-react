@@ -1,0 +1,42 @@
+
+/*==== Contact Details =====*/
+#contact-details {
+  display : flex; 
+  text-align : left;
+  align-items : center;
+  gap : 20px;
+  width: 80%;
+  margin : 0 auto; /* center the whole section */
+
+}
+
+.icon {
+  width : 40px;
+  height : 40px;
+  border-radius : 10px;
+}
+
+.contact {
+  display : flex;
+  align-items: center;
+}
+
+.contact span {
+  padding-left: 10px;
+}
+
+.contact img {
+  border-radius : 50%;
+  object-fit: cover;
+}
+
+.copy {
+  cursor : pointer; /* show hand pointer when hovered over */
+  transition : color 
+                0.3s 
+                ease; /* gradual transition rather than instantaneous */
+}
+
+.copy:hover{
+  color: #00F0FF;
+}
