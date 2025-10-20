@@ -40,3 +40,20 @@
 .copy:hover{
   color: #00F0FF;
 }
+
+
+.toast {
+  position : fixed; /* Stays in place even scrolling */
+  bottom : 20px; 
+  /* below 2 centers toast horizontally center */
+  left: 50%; 
+  transform: translateX(-50%);
+  /* toast color*/
+  background: #ffffff;
+  color :black;
+  padding : 8px 12px;
+  border-radius: 9999px;
+  opacity: 0; /*invisible by default*/
+  transition : opacity 0.3s ease;
+  font-size : 14px;
+}
