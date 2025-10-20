@@ -1,0 +1,61 @@
+
+/* === Projects === */
+.Projects {
+  margin-top : 20px;
+  align-items: start;
+  margin : auto;
+}
+
+
+.project_card {
+    align-items: start;
+    display : grid;
+    grid-template-columns: 400px auto;
+    height: auto;
+    border : 1px solid #00F0FF;
+    padding : 0 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.col1 {
+    align-items: start;
+    display: grid;
+}
+
+.col1 .Header {
+  font-size: 36px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.col1 .description {
+  line-height: 1.4;
+}
+
+.col2 {
+    padding-top : 20px;
+    padding-left: 20px;
+    display : flex;
+    line-height: 1.5;
+    align-items: start;
+    gap : 20px;
+}
+
+
+.list-indexing {
+  margin-left : 10px;
+}
+
+.project-showcase {
+  display : flex;
+  margin : 20px 0 auto;
+}
+
+.project-showcase img {
+  border-radius: 15%;
+  padding : 10px;
+  height : 500px;
+
+}
+
