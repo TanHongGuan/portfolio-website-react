@@ -1,0 +1,19 @@
+.aboutMe {
+    width : 80%;
+}
+
+.Me hr {
+    border : 2px solid #ffffff;
+    width: 5%;
+    margin : 20px auto; /* spacing above and below, centered */
+}
+
+.Me h1 {
+    text-align: center;
+}
+
+.Me p {
+    text-align: center;
+    line-height: 1.8;
+    font-size : 16px;
+}
