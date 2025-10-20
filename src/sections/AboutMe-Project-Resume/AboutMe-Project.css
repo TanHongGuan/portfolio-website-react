@@ -1,0 +1,26 @@
+.switcher {
+    width : 80%;
+    justify-content: center;
+    margin : 0 auto;
+}
+
+.tab-buttons {
+    display : flex;
+    justify-content: center;
+}
+
+.tab-buttons button {
+  color: #00F0FF;
+  background : none;
+  border: 1px solid #00F0FF;
+  padding: 10px 20px;
+  margin : 10px;
+  border-radius: 9999px; 
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tab.active {
+  background-color: #00F0FF;
+  color: #1f242d; /* Dark background for contrast */ 
+}
