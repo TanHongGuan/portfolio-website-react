@@ -19,36 +19,41 @@ export default function Contact() {
     return (
         <section id="contact-details">
             {/* LinkedIn -->*/}
-            <a class="icon-linkedin"
+            <a className="icon-linkedin"
                 href="https://www.linkedin.com/in/tanhongguan04/"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="LinkedIn">
-                <img class="icon" src={LinkedIn} alt="LinkedIn"/>
+                <img className="icon" src={LinkedIn} alt="LinkedIn"/>
             </a>
 
             {/* GitHub */}
-            <a class="icon-github"
+            <a className="icon-github"
                 href="https://github.com/TanHongGuan"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="GitHub">
-                <img class="icon" src={GitHub} alt="GitHub"/>
+                <img className="icon" src={GitHub} alt="GitHub"/>
             </a>
             
-            <div class="contact">
-                <img class="icon" src={Phone} alt="phone"/>
+            <div className="contact">
+                <img className="icon" src={Phone} alt="phone"/>
                 <span
-                class="copy"
+                className="copy"
                 onClick={() => handleCopy("+60 17-341 1182")}> 
                 +60 17-341 1182 </span>        
             </div>            
 
-            <div class="contact">
-                <img class="icon" src={Email} alt="email"/>
+            <div className="contact">
+                <img className="icon" src={Email} alt="email"/>
                 <span
-                class="copy" 
+                className="copy" 
                 onClick={() => handleCopy("tanhongguan04@gmail.com")}> 
                 tanhongguan04@gmail.com </span>
             </div>
+
+            <div 
+            className="toast" 
+            style={{ opacity: visible ? 1 : 0, transition: "opacity 0.3s ease" }}> {toastText}</div>
+
 
         </section>
     );
