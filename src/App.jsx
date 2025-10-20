@@ -1,7 +1,7 @@
 import Header from "./sections/header.jsx"
 import Contact from "./sections/Contact.jsx"
-import AboutMe_Project_Resume from "./sections/AboutMe-Project-Resume/AboutMe-Project.jsx"
-import "./sections/AboutMe-Project-Resume/AboutMe-Project.css"
+import AboutMe_Project_Resume from "./sections/AboutMe-Project-Resume/switch-controller.jsx"
+import "./sections/AboutMe-Project-Resume/switch-controller.css"
 import "./sections/Contact.css"
 import "./sections/Header.css"
 
