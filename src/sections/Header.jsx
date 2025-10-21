@@ -21,7 +21,9 @@ export default function Header() {
         <div class="about-me">
             <p>
             I'm currently pursuing a degree in Bachelor of Computer Science in Monash University Malaysia. <br/> 
-            This webpage serves as both showcase of my portfolio and my proficiency in HTML, CSS and Javascript.
+            This webpage serves as both showcase of my portfolio and my interest in development. <br/>
+            <span className="sparkle">✨</span> My career goal is to become a full-fledged full stack developer ;
+            <br/>mastering both client-side and server-side technologies to build scalable, efficient, and user-centered applications.
             </p>
         </div>
     </section>            
